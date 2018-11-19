@@ -1,0 +1,89 @@
+body{
+  /*background-color: #c093ff;*/
+  background-image: url('../images/glitter.gif');
+  background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: #c093ff;
+    overflow: hidden;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+    font-family: helvetica;
+    font-size: 20px;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+h1{
+  font-family: bookman;
+  font-style: oblique;
+  font-size: 80px;
+  text-align: center;
+  line-height: 0.5;
+  -webkit-text-stroke: 1px white;
+}
+
+h2{
+  font-family: arial black;
+  text-align: center;
+  color: #fffefc;
+  font-size: 30px;
+  line-height: 1.0;
+}
+
+.custom{
+  cursor: url(cursor.ani), auto;
+}
+
+h3{
+  font-size: 20px;
+  color: #ffd3fb;
+  margin-right: 50px;
+  margin-left: 50px;
+  -webkit-text-stroke: 1px white;
+}
+
+ul{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 200px;
+  margin-left: 200px;
+  text-align: center;
+}
+/*code used from https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after { //also used from w3 schools
+    content: "";
+    display: table;
+    clear: both;
+}

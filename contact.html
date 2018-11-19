@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" type="text/css" href="styles/musicstyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<head>
+<title>Contact</title>
+</head>
+<body>
+
+<ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="music.html">Leshya's Music</a></li>
+  		<li><a href="contact.html">Contact</a></li>
+  		<li><a href="currentnews.html">News</a></li>
+  		<li><a href="mymusic.html">My Music</a></li>
+  		<li><a href="asg2part1.html">Assignment 2</a></li>
+  		<li><a href="asg3.html">Assignment 3</a></li>
+  		<li><a href="asg4.html">Assignment 4</a></li>
+  		<li><a href="asg4pt2.html">Assignment 4 Pt 2</a></li>
+	</ul>
+
+<h1>Contact Me</h1>
+
+<form action="mailto:leshyabracaglia@gmail.com" method="get">
+	<fieldset>
+	<legend> Please Fill Out The Required Form to Contact me!</legend>
+	<p>
+	
+	<label for="Name:">Name: </label>  <input type=text name="fullname" id="fullname"> <br>
+	<label for="Email:">Email:</label>   <input type=email  name="email" id="email"><br>
+	
+	<label for="comments"></label>
+	<p>
+  	<textarea cols=50 rows=5 auto name="comments" id="comments">Enter any Comments...</textarea>
+  	<p>
+  	<label for="city">Select Your Closest Major City:</label>
+  	<select name="state" id="state">
+  		<optgroup label="East Coast">
+  			<option value="NY">New York City</option>
+  			<option value="PA">Philadelphia </option>
+  			<option value="MIA">Miami </option>
+  		</optgroup>
+  		<optgroup label="West Coast">
+  			<option value="SF">San Francisco </option>
+  			<option value="LA" selected >Los Angeles </option>
+  		</optgroup>
+  		<optgroup label="Europe">
+  			<option value="SP">Barcelona </option>
+  			<option value="FR" selected >Paris </option>
+  			<option value="IT" selected >Rome </option>
+  		</optgroup>
+  	</select>
+	<p>
+	<label for="bday">Birthday:</label>
+	<input type=date  name="bday" id="bday">
+	<p>
+	<label for="age">Age in Years:</label>
+	<input type=number  name="age" min="10" max="100" id="age">
+	<p>
+	<label for="gender">Gender:</label></br>
+	<input type=radio name="gender" id="gender" value="Female">Female
+	<input type=radio name="gender" id="gender" value="Male">Male
+	<input type=radio name="gender" id="gender" value="Other">Other
+	
+  	</fieldset>
+  	
+  	<fieldset>
+  	<legend> Other Information </legend>
+  	<label for="Relation"> Select All That Apply: </label><br>
+  		Friend <input type=checkbox name="relation" id="relation" value=friend> 
+		Student <input type=checkbox name="relation" id="relation" value=student>
+ 		Teacher <input type=checkbox name="relation" id="relation" value=teacher> 
+ 		Other <input type=checkbox name="relation" id="relation" value=other> 
+  	<p>
+  	<label for="color">Favorite Color: </label>
+  	<input type=color name=color id="color"> 
+  	<p>
+  	<label for="range">How much do you like me?</label>
+  	<input type="range" min="1" max="100" value="50" class="slider" name="range" id="myRange">
+  	<label for="love"></label>
+  	<button type="button" name="love" id="love">I Love You!</button>
+  	</fieldset>
+  	
+  	<input type=submit >
+  	
+</form>
+
+</body>
+</html>

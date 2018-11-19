@@ -1,0 +1,137 @@
+h2{
+	text-align: center;
+  	font-style: oblique;
+  	font-size: 100px;
+  	text-align: center;
+  	line-height: 1.5;
+  	background: url('../images/glitter.gif');
+  	margin-bottom: 0px;
+  	margin-top: 0px;
+  	color: white;
+}
+
+h3{
+	text-align: center;
+	font-size: 30px;
+}
+
+body {
+	background-color: #e2ceff;
+	margin: 0; 
+	padding: 0;
+}
+
+input[type=text]{
+	position: relative; 
+	left: 40%; 
+	height: 40px;
+	margin-left: -150px
+	width: 30%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    font-size: 15px;
+    border: 2px solid #b042f4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button{
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 15px;
+	background-color: white;
+	border-radius: 40px;
+	border: 2px solid #b042f4;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#page {
+	margin: 0 auto 0 auto;
+}
+
+ul{
+	background-color: #584f4d;
+	border:none;
+	padding: 0;
+	margin: 0;}
+
+li{
+	background-color: #4b42f4;
+	color: white;
+	border-top: 1px solid #908bed;
+	border-bottom: 1px solid #181287;
+	font-size: 35px;
+	text-align: center;
+	font-variant: small-caps;
+	text-shadow: 2px 2px 1px #9f593f;
+	height: 50px;
+	padding-left: 1em;
+	padding-top: 10px;
+}
+
+.done {
+	background-color: #0d0860;
+	color: black;
+	text-shadow: 2px 2px 1px #914141;
+	border-top: 1px solid #10097c;
+	border-bottom: 1px solid black;}
+
+li a {
+	color: #fff;
+	text-decoration: none;
+	background-image: url("../images/icon-link.png");
+	background-position: center, right;
+	background-repeat: no-repeat;
+    padding-right: 36px;}
+
+p {
+	color: #403c3b; 
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto 20px auto;
+	min-width: 20%; 
+	max-width: 80%; }
+
+#scriptResults {
+	padding-bottom: 10px;
+}
+
+/* Small screen - acts like the app would */
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #584f4d;
+    }
+    #page {
+        max-width: 480px;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+/* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+   	}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    h1{
+        background-image: url(../img/2xkinglogo.png);
+        background-size: 72px 72px;
+    }
+}

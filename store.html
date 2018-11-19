@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <link rel="stylesheet" type="text/css" href="styles/store.css">
+
+  <head>
+    <title>Store</title>
+  </head>
+
+  <body>
+  
+  	<ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="music.html">Leshya's Music</a></li>
+  		<li><a href="contact.html">Contact</a></li>
+  		<li><a href="currentnews.html">News</a></li>
+  		<li><a href="mymusic.html">My Music</a></li>
+  		<li><a href="asg2part1.html">Assignment 2</a></li>
+  		<li><a href="asg3.html">Assignment 3</a></li>
+  		<li><a href="asg4.html">Assignment 4</a></li>
+  		<li><a href="asg4pt2.html">Assignment 4 Pt 2</a></li>
+	</ul>
+	
+	<h2 id="smalltitle">Leshya's Online Store!</h2>
+
+	</br></br>
+	
+	<div class="row">
+  		<div class="column">
+  			<p class="label"> Zara Floral Front-Tie Top </p>
+  			<img src="images/store/item1.jpg" height = '200' class="center" id="item">
+  			<p class="label">Price: $<input type="number"  id="p1" class = "price" readonly name="store" value = '15'></p>
+  			<p class="label"> Quantity: <input type="number"  id="q1" class="quant" min="0" max="5"></p>
+  		</div>
+  		<div class="column">
+  			<p class="label"> Fila X Hello Kitty Cropped Polo </p>
+  			<img src="images/store/item2.jpg" class="center">
+  			<p class="label">Price: $<input type="number"  id="p2" class = "price" readonly name="store" value = '15'></p>
+  			<p class="label"> Quantity: <input type="number" id="q2" class="quant" min="0" max="5"></p>
+  		</div>
+  		<div class="column">
+  			<p class="label"> Urban Outfitters Plaid Skirt </p>
+  			<img src="images/store/item3.jpg" class="center" id="item">
+  			<p class="label">Price: $<input type="number"  id="p3" class = "price" readonly name="store" value = '35'></p>
+  			<p class="label"> Quantity: <input type="number" id="q3" class="quant" min="0" max="5"></p>
+  		</div>
+	</div>
+	
+	<div class="row">
+  		<div class="column">
+  			<p class="label"> Vintage DuPont Racing Jacket </p>
+  			<img src="images/store/item4.jpg" class="center">
+  			<p class="label">Price: $<input type="number"  id="p4" class = "price" readonly name="store" value = '50'></p>
+  			<p class="label"> Quantity: <input type="number" class="quant" id="q4" min="0" max="5"></p>
+  		</div>
+  		<div class="column">
+  			<p class="label"> Motel Two Piece Set </p>
+  			<img src="images/store/item5.jpg" class="center">
+  			<p class="label">Price: $<input type="number"  id="p5" class = "price" readonly name="store" value = '35'></p>
+  			<p class="label"> Quantity: <input type="number" class="quant" id="q5" min="0" max="5"></p>
+  		</div>
+  		<div class="column">
+  			<p class="label"> Urban Outfitters Full House T </p>
+  			<img src="images/store/item6.jpg" class="center">
+  			<p class="label">Price: $<input type="number"  id="p1" class = "price" readonly name="store" value = '30'></p>
+  			<p class="label"> Quantity: <input type="number" class="quant" id="q6" min="0" max="5"></p>
+  		</div>
+	</div>
+	
+	<p class="total"> Your Cart Total: </br><input type="text" id="ctotal" class="ctotal" readonly> </p>
+	
+	<form action="#" id="form">
+	<legend>Please Fill Out Your Personal Information to Complete Your Order</legend>
+    	</br>
+    	<fieldset>
+    		<p class="label">Full Name: <input type="text" name="Full Name" ></br></p>
+  			<p class="label">Email: <input type=email name="Email"><br></p>
+  			<p class="label">Address: <input type="text" name="Address" ></p>
+  			<p class="label">City: <input type="text" name="City" > </p>
+  			<p class="label">ZipCode: <input type="number" name="Zip Code" ></p>
+  		</fieldset>
+  		
+  		<fieldset>
+  			<p class="label" name="Card Type">Credit Card Type: </p>
+              <input name="payment" type="radio" value="Credit"> AMEX
+              <input name="payment" type="radio" value="Debit"> VISA
+              <input name="payment" type="radio" value="Cash"> MASTERCARD
+            <p class="label">Credit Card Number: <input type="number" name="Credit Card Number"></p>
+            <p class="label">Expiration Date: <input type="month" name="Expiration Date" ></p>
+              <p class="label">Shipping: </p>
+            <select id="select" name="Shipping">
+  				<option selected="selected" value="0">Will-Call ($0)</option>
+  				<option value="5">10-Day Shipping ($5)</option>
+  				<option value="10">5-Day Shipping ($10)</option>
+  				<option value="30">Overnight Shipping ($30)</option>
+			</select>
+  		</fieldset>
+  		
+  		<fieldset>
+  			<p class="total"> Grand Total: </br><input type="text" name="Total" class="ctotal" id="gtotal" readonly> </p>
+  		</fieldset>
+               
+		<br><br><input type="submit" value="Submit Order">
+		<input type="reset" value="Cancel Order" name="cancel">	
+
+    </form>
+
+    
+  <script type="text/javascript" src='store.js'></script>
+  </body>
+
+</html>
